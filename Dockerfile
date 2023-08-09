@@ -60,6 +60,7 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
 RUN python3.10 -m venv /py && \
   /py/bin/pip install --upgrade pip && \
   /py/bin/pip install --no-cache-dir -r /tmp/requirements.txt && \
+  /py/bin/pip install git+https://www.github.com/ultrafunkamsterdam/undetected-chromedriver@master && \
   rm /tmp/requirements.txt
 
 WORKDIR /app

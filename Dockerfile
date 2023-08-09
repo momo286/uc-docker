@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     x11vnc \
     fluxbox \
     wget \
+    git \
     unzip \
     gnupg \
     --no-install-recommends \
